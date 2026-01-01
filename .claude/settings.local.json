@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter pub get:*)",
+      "Bash(cmd //c \"where flutter\")",
+      "Bash(cmd //c \"dir /s /b C:\\\\flutter\\\\bin\\\\flutter.bat 2>nul || dir /s /b C:\\\\src\\\\flutter\\\\bin\\\\flutter.bat 2>nul || dir /s /b %LOCALAPPDATA%\\\\flutter\\\\bin\\\\flutter.bat 2>nul || echo Not found in common locations\")",
+      "Bash(cmd //c \"powershell -Command \"\"if \\(!\\(Test-Path ''C:\\\\flutter''\\)\\) { Write-Host ''Downloading Flutter SDK...'' ; Invoke-WebRequest -Uri ''https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.5-stable.zip'' -OutFile ''C:\\\\flutter_sdk.zip'' ; Write-Host ''Extracting...'' ; Expand-Archive -Path ''C:\\\\flutter_sdk.zip'' -DestinationPath ''C:\\\\'' -Force ; Remove-Item ''C:\\\\flutter_sdk.zip'' ; Write-Host ''Done!'' } else { Write-Host ''Flutter folder already exists'' }\"\"\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\laragon\\\\www\\\\EISALL\\\\Mobile Apps\\\\Studyseco\\\\install_flutter.ps1\")",
+      "Bash(cmd //c \"dir C:\\\\Users\\\\eis-2\\\\flutter_sdk.zip\")"
+    ]
+  }
+}

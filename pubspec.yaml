@@ -1,0 +1,109 @@
+name: studyseco
+description: StudySeco - Online Learning Platform for Malawian Secondary Education
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State Management
+  provider: ^6.1.1
+
+  # HTTP & API
+  dio: ^5.4.0
+  retrofit: ^4.0.3
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Authentication
+  flutter_secure_storage: ^9.0.0
+
+  # UI Components
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  flutter_staggered_grid_view: ^0.7.0
+  percent_indicator: ^4.2.3
+  fl_chart: ^0.66.0
+
+  # Video Player
+  video_player: ^2.8.2
+  chewie: ^1.7.4
+
+  # Forms & Validation
+  flutter_form_builder: ^9.1.1
+  form_builder_validators: ^9.1.0
+
+  # Navigation
+  go_router: ^13.0.1
+
+  # Utilities
+  intl: ^0.19.0
+  timeago: ^3.6.1
+  uuid: ^4.3.1
+  path_provider: ^2.1.2
+
+  # PDF
+  flutter_pdfview: ^1.3.2
+  printing: ^5.12.0
+  pdf: ^3.10.7
+
+  # Image Picker
+  image_picker: ^1.0.7
+
+  # Notifications
+  flutter_local_notifications: ^16.3.0
+
+  # Connectivity
+  connectivity_plus: ^5.0.2
+
+  # WebSocket for real-time chat
+  web_socket_channel: ^2.4.0
+
+  # File handling
+  file_picker: ^6.1.1
+  open_file: ^3.3.2
+
+  # Pull to refresh
+  pull_to_refresh: ^2.0.0
+
+  # Animations
+  flutter_animate: ^4.3.0
+  lottie: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.8
+  retrofit_generator: ^8.0.6
+  hive_generator: ^2.0.1
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
