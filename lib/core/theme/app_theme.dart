@@ -29,9 +29,9 @@ class AppTheme {
           fontWeight: FontWeight.w600,
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 2,
-        shadowColor: Colors.black.withOpacity(0.1),
+        shadowColor: Colors.black.withValues(alpha: 0.1),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
@@ -106,7 +106,7 @@ class AppTheme {
         type: BottomNavigationBarType.fixed,
         elevation: 8,
       ),
-      tabBarTheme: const TabBarTheme(
+      tabBarTheme: const TabBarThemeData(
         labelColor: AppColors.primary,
         unselectedLabelColor: AppColors.textSecondary,
         indicatorSize: TabBarIndicatorSize.label,
@@ -137,7 +137,7 @@ class AppTheme {
         ),
         behavior: SnackBarBehavior.floating,
       ),
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
@@ -178,10 +178,10 @@ class AppTheme {
           fontWeight: FontWeight.w600,
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 2,
         color: AppColors.darkSurface,
-        shadowColor: Colors.black.withOpacity(0.3),
+        shadowColor: Colors.black.withValues(alpha: 0.3),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
@@ -218,7 +218,7 @@ class AppTheme {
           borderSide: const BorderSide(color: AppColors.primary, width: 2),
         ),
         hintStyle: TextStyle(
-          color: Colors.white.withOpacity(0.5),
+          color: Colors.white.withValues(alpha: 0.5),
           fontSize: 14,
         ),
       ),
@@ -230,7 +230,7 @@ class AppTheme {
         elevation: 8,
       ),
       dividerTheme: DividerThemeData(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha: 0.1),
         thickness: 1,
         space: 1,
       ),
@@ -242,7 +242,7 @@ class AppTheme {
         ),
         behavior: SnackBarBehavior.floating,
       ),
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         backgroundColor: AppColors.darkSurface,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),

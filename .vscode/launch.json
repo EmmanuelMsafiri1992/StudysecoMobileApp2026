@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "StudySeco (Chrome)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "chrome",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "StudySeco (macOS)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "macos",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "StudySeco (Debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "StudySeco (Profile)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "StudySeco (Release)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "release"
+    }
+  ]
+}
