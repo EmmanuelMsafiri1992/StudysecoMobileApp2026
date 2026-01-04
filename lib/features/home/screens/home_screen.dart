@@ -27,22 +27,30 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   @override
-  void initState() {
-    super.initState();
-    _updateIndexFromLocation();
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _updateIndexFromLocation();
+    });
   }
 
   void _updateIndexFromLocation() {
-    final location = GoRouterState.of(context).matchedLocation;
-    for (int i = 0; i < _navItems.length; i++) {
-      if (location.startsWith(_navItems[i].path)) {
-        if (_currentIndex != i) {
-          setState(() {
-            _currentIndex = i;
-          });
+    if (!mounted) return;
+
+    try {
+      final location = GoRouterState.of(context).matchedLocation;
+      for (int i = 0; i < _navItems.length; i++) {
+        if (location.startsWith(_navItems[i].path)) {
+          if (_currentIndex != i) {
+            setState(() {
+              _currentIndex = i;
+            });
+          }
+          break;
         }
-        break;
       }
+    } catch (e) {
+      // Router state not available yet
     }
   }
 

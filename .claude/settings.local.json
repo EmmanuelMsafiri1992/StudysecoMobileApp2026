@@ -48,7 +48,13 @@
       "Bash(~/Library/Android/sdk/platform-tools/adb reconnect offline)",
       "Bash(~/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed)",
       "WebFetch(domain:studyseco.com)",
-      "WebFetch(domain:api.studyseco.com)"
+      "WebFetch(domain:api.studyseco.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(flutter clean:*)"
     ]
   }
 }
