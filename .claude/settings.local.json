@@ -46,7 +46,9 @@
       "Bash(sysctl:*)",
       "Bash(~/Library/Android/sdk/cmdline-tools/latest/bin/sdkmanager:*)",
       "Bash(~/Library/Android/sdk/platform-tools/adb reconnect offline)",
-      "Bash(~/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed)"
+      "Bash(~/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed)",
+      "WebFetch(domain:studyseco.com)",
+      "WebFetch(domain:api.studyseco.com)"
     ]
   }
 }
